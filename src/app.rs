@@ -33,7 +33,8 @@ pub fn App() -> impl IntoView {
 fn HomePage() -> impl IntoView {
     view! {
         <div class="w-screen h-screen bg-linear-to-br from-purple-500 bg-blue-950">
-            <Button />
+            <Button1 />
+            <Button2 />
             <Input />
         </div>
     }
@@ -62,12 +63,12 @@ fn NotFound() -> impl IntoView {
 }
 
 #[component]
-fn Button() -> impl IntoView {
+fn Button1() -> impl IntoView {
     view! {
         <div class="w-full">
             <div class="flex justify-center content-center items-center">
-                <button class="p-5 m-2 rounded-3xl text-white bg-linear-to-r from-purple-500 to-red-500">
-                    Button
+                <button class="p-5 m-2 rounded-3xl text-white bg-linear-to-r from-purple-500">
+                    Button 1
                 </button>
             </div>
         </div>
@@ -79,10 +80,22 @@ fn Input() -> impl IntoView {
     view! {
         <div class="w-full">
             <div class="flex justify-center content-center items-center">
-                <input class="text-white text-2xl rounded-3xl p-5 bg-linear-to-r from-purple-500 to-red-500">
+                <input class="text-white text-2xl rounded-3xl p-5 bg-linear-to-r from-purple-500">
                 </input>
             </div>
         </div>
+    }
+}
 
+#[component]
+fn Button2() -> impl IntoView {
+    view! {
+        <div class="w-full">
+            <div class="flex justify-center content-center items-center">
+                <button class="p-5 m-2 rounded-3xl text-white bg-linear-to-r from-purple-500 to-red-500">
+                    Button 2
+                </button>
+            </div>
+        </div>
     }
 }
