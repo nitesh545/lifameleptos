@@ -37,6 +37,7 @@ fn HomePage() -> impl IntoView {
             <Button2 />
             <Input1 />
             <Input2 />
+            <Input3 />
         </div>
     }
 }
@@ -106,7 +107,20 @@ fn Input2() -> impl IntoView {
     view! {
         <div class="w-full">
             <div class="flex justify-center content-center items-center">
-                <input class="text-white text-2xl rounded-3xl p-5 bg-linear-to-r from-purple-500 to-red-500">
+                <input class="m-2 text-white text-2xl rounded-3xl p-5 bg-linear-to-r from-purple-500 to-red-500">
+                </input>
+            </div>
+        </div>
+    }
+}
+
+#[component]
+fn Input3() -> impl IntoView {
+    view! {
+        <div class="w-full">
+            <div class="flex justify-center content-center items-center">
+                <input class="m-2 p-5 text-white text-2xl rounded-3xl bg-linear-to-r from-purple-500 to-blue-950">
+
                 </input>
             </div>
         </div>
